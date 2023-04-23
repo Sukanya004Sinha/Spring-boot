@@ -13,4 +13,14 @@ This annotation class mark as a source of beans and its one of the official anno
 @Autowired -> it matches the component type and put an object inside that
 
 
-5. @Component ->
+5. @Component -> if we use this annotate on any class that becomes a spring component component object manages the object life cycle or its object is manage by spring container  either  we can annotate it to bean or add @component annotation
+ @Controller (Component, MVC Controller) -> it works all the things for component , MVC controller
+ @Service -> This is used for business logics or service class
+ @Repository -> When we create any DAO class then we can use repository annotations
+ if any exception will come then it will come it will rethrow that exception as a spring unchecked exception
+
+6. @ComponentScan -> It scans all the packages  and subpackages means different packages as well
+
+@Qualifier -> Suppose we have mutiple object of  single method so if i want to particular one and whatever id or name we will give in Qualifier one that particular will print
+@Lazy -> Like in Qualifier both the object was getting created like student 1 and Student 2 but for the time being if we are not using Student 1 but still object was getting creating for student 1 as well
+but if we use @lazy annotation whatever we will pass in Qualifier only it will create that particular object

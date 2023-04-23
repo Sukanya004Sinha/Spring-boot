@@ -1,8 +1,14 @@
 package com.annotations;
 
 public class Student {
-
-    public void studying(){
-        System.out.println("I am studying");
+    String name ;
+    public Student (String name){
+        this.name =name;
     }
+
+    public void studying() {
+        System.out.println(this.name+ " am studying");
+    }
+
+
 }
