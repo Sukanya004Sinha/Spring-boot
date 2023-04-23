@@ -1,0 +1,16 @@
+@SpringBootApplication-> is equivalent to
+@EnableAutoConfiguration +@ComponentScan + @Configuration
+Any spring boot main class is always annotated with @SpringBoot Application
+
+--> it will auto configure all the things related to spring-boot starter web, My sql autoconfiguration basically what are the dependencies we are using it will auto configure all the dependencies
+
+@ComponentScan -> it wll scan all the packages or subpackages for spring component bean
+@configuration ->in this all the beans are declared in this  we can create those methods that returns bean
+we will create that type of bean that IOC container can manage
+
+This annotation class mark as a source of beans and its one of the official annotation if you are using java based application
+
+@Autowired -> it matches the component type and put an object inside that
+
+
+5. @Component ->
