@@ -24,3 +24,6 @@ This annotation class mark as a source of beans and its one of the official anno
 @Qualifier -> Suppose we have mutiple object of  single method so if i want to particular one and whatever id or name we will give in Qualifier one that particular will print
 @Lazy -> Like in Qualifier both the object was getting created like student 1 and Student 2 but for the time being if we are not using Student 1 but still object was getting creating for student 1 as well
 but if we use @lazy annotation whatever we will pass in Qualifier only it will create that particular object
+
+@ResponseBody -> Annotations tells a controller that the object returns is automatically serialize
+into json and passed back into HTTP response.
